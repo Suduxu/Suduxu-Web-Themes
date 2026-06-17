@@ -1,0 +1,61 @@
+sdx-dpad-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+sdx-dpad {
+    width: 7em;
+    height: 7em;
+    position: relative;
+    touch-action: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+sdx-dpad-cross {
+    position: absolute;
+    inset: 0;
+    transition: transform 100ms ease-out;
+}
+
+sdx-dpad-up {
+    position: absolute;
+    left: 33.33%;
+    top: 0;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+sdx-dpad-down {
+    position: absolute;
+    left: 33.33%;
+    top: 66.67%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+sdx-dpad-left {
+    position: absolute;
+    left: 0;
+    top: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+sdx-dpad-right {
+    position: absolute;
+    left: 66.67%;
+    top: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+sdx-dpad-center {
+    position: absolute;
+    left: 33.33%;
+    top: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+    background: linear-gradient(to bottom, #000, #444);
+}

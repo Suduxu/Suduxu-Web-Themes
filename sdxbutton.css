@@ -1,0 +1,19 @@
+sdx-button {
+    background: radial-gradient(circle, #ffffff, #cccccc);
+    color: #444444;
+    width: 10vw;
+    height: 10vw;
+    font-size: calc(1.5rem + 1.25vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    touch-action: none;
+}
+
+sdx-button:active {
+    background: radial-gradient(circle, #bbbbbb, #888888);
+    color: #000000;
+}
