@@ -88,7 +88,7 @@ function callOnJoystickInput(joystick, data) {
     }));
     if (window.kmpJsBridge) {
         window.kmpJsBridge.callNative(
-            "sendInput",
+            "sendJoystickInput",
             JSON.stringify({ mocked: false, joystick: name, ...data }),
             () => {}
         );
