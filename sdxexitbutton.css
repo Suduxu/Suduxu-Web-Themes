@@ -1,0 +1,65 @@
+sdx-exit-button {
+    --sdx-exit-button-size: 24px;
+    --sdx-exit-button-corner-inset: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 0;
+    background: transparent;
+    color: #000000;
+    border-radius: 9999px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+sdx-exit-button:active {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+sdx-exit-button[corner] {
+    position: fixed;
+    z-index: 1000;
+}
+
+sdx-exit-button[corner="top-start"] {
+    top: var(--sdx-exit-button-corner-inset);
+    left: var(--sdx-exit-button-corner-inset);
+}
+
+sdx-exit-button[corner="top-end"] {
+    top: var(--sdx-exit-button-corner-inset);
+    right: var(--sdx-exit-button-corner-inset);
+}
+
+sdx-exit-button[corner="bottom-start"] {
+    bottom: var(--sdx-exit-button-corner-inset);
+    left: var(--sdx-exit-button-corner-inset);
+}
+
+sdx-exit-button[corner="bottom-end"] {
+    bottom: var(--sdx-exit-button-corner-inset);
+    right: var(--sdx-exit-button-corner-inset);
+}
+
+sdx-exit-button .sdx-exit-button__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    font-size: var(--sdx-exit-button-size);
+    line-height: 1;
+}
+
+sdx-exit-button .sdx-exit-button__icon svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    display: block;
+}
