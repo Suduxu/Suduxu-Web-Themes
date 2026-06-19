@@ -11,6 +11,8 @@ sdx-button {
     user-select: none;
     cursor: pointer;
     touch-action: none;
+    -webkit-user-select: none;
+    outline: none;
 }
 
 sdx-button:active {
