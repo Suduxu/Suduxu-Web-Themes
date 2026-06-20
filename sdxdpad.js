@@ -182,6 +182,6 @@ function applyDirections(newPressed, dpad, currentPressed) {
     }
 
 
-    dpad.querySelector("sdx-dpad-cross").style.transform = newPressed.size > 0 ? "translateY(4px)" : "translateY(0)";
+    dpad.querySelector("sdx-dpad-cross").style.transform = newPressed.size > 0 ? "translateY(0.25rem)" : "translateY(0)";
     return newPressed;
 }

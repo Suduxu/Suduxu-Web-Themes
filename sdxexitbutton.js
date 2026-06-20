@@ -2,7 +2,7 @@ if (!window.__sdxExitButtonRegistered) {
     window.__sdxExitButtonRegistered = true;
 
     const HANDLED_EXIT_BUTTON = new Set(["size", "corner", "onexit", "style", "aria-label"]);
-    const DEFAULT_SIZE = "24px";
+    const DEFAULT_SIZE = "1.5rem";
 
     for (let button of document.querySelectorAll("sdx-exit-button")) {
         const size = normalizeSize(button.getAttribute("size") || DEFAULT_SIZE);
@@ -42,7 +42,7 @@ if (!window.__sdxExitButtonRegistered) {
 }
 
 function normalizeSize(size) {
-    return /^-?\d+(?:\.\d+)?$/.test(size) ? `${size}px` : size;
+    return /^-?\d+(?:\.\d+)?$/.test(size) ? `${size}rem` : size;
 }
 
 function normalizeCorner(corner) {
