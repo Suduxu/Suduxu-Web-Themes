@@ -45,7 +45,7 @@ function callOnButtonInput(btn, state) {
     if (window.kmpJsBridge) {
         window.kmpJsBridge.callNative(
             "sendButtonInput",
-            JSON.stringify({ mocked: false, button, state }),
+            JSON.stringify({ mocked: false, type: button, state: state }),
             () => {}
         );
     }

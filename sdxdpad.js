@@ -136,7 +136,7 @@ function callOnDpadInput(dpad, button, state) {
     if (window.kmpJsBridge) {
         window.kmpJsBridge.callNative(
             "sendButtonInput",
-            JSON.stringify({ mocked: false, button, state: state }),
+            JSON.stringify({ mocked: false, type: button, state: state }),
             () => {}
         );
     }
