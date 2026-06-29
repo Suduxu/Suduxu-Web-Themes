@@ -101,8 +101,8 @@ sdx-exit-button { --sdx-exit-button-size: 1.25rem; }
 #### Embedding / Distribution
 Include the script and stylesheet for the components you need. Example (use the matching dist files for each component):
 ```html
-<script defer src="https://cdn.jsdelivr.net/gh/Suduxu/Suduxu-Web-Themes@v1.0.0/dist/sdxbutton.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Suduxu/Suduxu-Web-Themes@v1.0.0/dist/sdxbutton.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/Suduxu/Suduxu-Web-Themes@v1.0.0-hotfix/dist/sdxbutton.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Suduxu/Suduxu-Web-Themes@v1.0.0-hotfix/dist/sdxbutton.min.css">
 <!-- add sdxjoystick.min.js / .css, sdxdpad.min.js / .css, sdxexitbutton.min.js / .css as needed -->
 ```
 
